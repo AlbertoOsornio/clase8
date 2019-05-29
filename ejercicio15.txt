@@ -1,0 +1,55 @@
+INICIO
+    const estadoResultados = 
+            {
+                nombre: "rafa",
+                gastos: [
+                        {
+                            nombre: "Comida",
+                            monto: 80
+                        },
+                        {
+                            nombre: "Auto",
+                            monto: 50
+                        },
+                        {
+                            nombre: "Salud",
+                            monto: 90
+                        },
+                        {
+                            nombre: "Salud",
+                            monto: 10
+                        }
+                ]
+                ingresos: [
+                            {
+                                nombre:"Trabajo",
+                                monto: 200
+                            },
+                            {
+                                nombre:"Curso",
+                                monto: 500
+                            }
+                ]
+            }
+        
+    iva = 16
+    ingresosBrutos = 0
+    sumaGastos = 0
+    impuestosAPagar = 0
+    
+    FOR contadorIngresos = 0; contadorIngresos<estadoResultados.ingresos.length; contadorIngresos++
+        sumaIngresosBrutos = sumaIngresosBrutos + estadoResultados.gastos[contadorIngresos].monto
+    FIN FOR
+
+    ingresosNetos = sumaIngresosBrutos - (sumaGastos *  iva) /100
+
+
+    FOR contadorGastos = 0; contadorGastos<estadoResultados.gastos.length; contadorGastos++
+        SI estadoResultados.gastos[contadorGastos].nombre === "Salud" ENTONCES
+            sumaGastos = sumaGastos + estadoResultados.gastos[contadorGastos.monto
+        FIN SI
+
+    impuestosAPagar = ingresosNetos - sumaGastos
+
+    ESCRIBE "impuestos a pagar: " + impuestosAPagar
+

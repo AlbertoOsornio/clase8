@@ -1,0 +1,9 @@
+INICIO
+    LEER arregloNumeros[2,3,4,5]
+    totalSuma = 0
+
+    FOR contador=0; contador < arregloNumeros Lenght ; contador++ 
+        totalSuma = totalSuma + arregloNumeros[0]
+    FIN FOR
+
+    ESCRIBE "La suma total es: " + totalSuma 

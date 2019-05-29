@@ -1,0 +1,16 @@
+INICIO
+    LEER matrizNumeros[
+                        [1, 2, 3, 4],
+                        [5, 6, 7, 8],
+                        [9, 10, 11, 12],
+                        ]
+
+    totalSuma = 0
+
+    FOR contador1=0; contador1 < arregloNumeros Lenght ; contador1++
+        FOR contador2=0; contador2 < arregloNumeros[contador1].Lenght; contador2++
+            totalSuma = totalSuma = arregloNumeros[contador1][contador2]
+    FIN FOR
+
+    ESCRIBE "La suma total es: " + totalSuma 
+FIN

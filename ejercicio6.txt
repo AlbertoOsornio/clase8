@@ -1,0 +1,8 @@
+INICIO
+    persona {
+                nombreCompleto{
+                    nombre "Rafa"
+                    apellido "Osornio
+                }
+    }
+    ESCRIBE persona.nombreCompleto.nombre + persona.nombreCompleto.apellido

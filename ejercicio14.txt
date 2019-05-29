@@ -1,0 +1,78 @@
+INICIO
+    const alumnos = [
+            {
+                nombre: "rafa",
+                materias: [
+                        {
+                            nombre: "Matematicas",
+                            calificacion: 80
+                        },
+                        {
+                            nombre: "Historia",
+                            calificacion: 50
+                        },
+                        {
+                            nombre: "Civismo",
+                            calificacion: 90
+                        }
+                ]
+            },
+            {
+                nombre: "karla",
+                materias: [
+                        {
+                            nombre: "Matematicas",
+                            calificacion: 100
+                        },
+                        {
+                            nombre: "Historia",
+                            calificacion: 90
+                        },
+                        {
+                            nombre: "Civismo",
+                            calificacion: 80
+                        }
+                ]
+            },
+            {
+               nombre: "morita",
+                materias: [
+                        {
+                            nombre: "Matematicas",
+                            calificacion: 70
+                        },
+                        {
+                            nombre: "Historia",
+                            calificacion: 100
+                        },
+                        {
+                            nombre: "Civismo",
+                            calificacion: 65
+                        }
+                ] 
+            }
+            ]
+           
+  
+    indiceMejorPromedio = 0
+    sumaCalificaciones1 = 0
+    sumaCalificaciones = 0
+    
+
+    FOR contadorAlumnos = 0; contadorAlumnos<alumnos.length + 1; contadorAlumnos++
+        FOR contadorMaterias = 0; contadorMaterias<alumnos[contadorAlumnos].materias.length; contadorMaterias ++
+            sumaCalificaciones = sumaCalificaciones + alumnos[contadorAlumnos].materias[contadorMaterias].calificacion
+            sumaCalificaciones1 = sumaCalificaciones1 + alumnos[contadorAlumnos+ 1].materias[contadorMaterias].calificacion
+            promedio = sumaCalificaciones/alumnos[contadorAlumnos].materias.length
+            promedio1 = sumaCalificaciones1/alumnos[contadorAlumnos+1].materias.length
+            IF promedio>promedio1 ENTONCES
+                mejorPromedio = promedio
+                indiceMejorPromedio = contadorAlumnos
+            SINO
+                indiceMejorPromedio = contadorAlumnos + 1
+            FIN SI
+        FIN FOR
+    FIN FOR
+
+    ESCRIBE "mejor promedio" + mejorPromedio + " corresponde a: " + alumnos[indiceMejorPromedio].nombre
+FIN

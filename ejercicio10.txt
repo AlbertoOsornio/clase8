@@ -1,0 +1,19 @@
+INICIO
+    const persona = {
+            nombre: “John Doe”,
+            tarjetas: [
+                        {          
+                            credito: 19000 
+                        },
+                        {
+                            credito: 50000
+                        }
+            ]
+        }
+    creditoTotal
+
+    FOR contador = 0; contador<persona.tarjetas.length; contador++
+        creditoTotal = creditoTotal + persona.tarjetas[contador].credito
+    FIN FOR
+    ESCRIBE creditoTotal
+

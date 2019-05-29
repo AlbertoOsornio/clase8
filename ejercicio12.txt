@@ -1,0 +1,35 @@
+INICIO
+    const stores = [
+                    {
+                        name: "Amazon",
+                        stock: [
+                            { marca: "Huawei", modelo: "P30", precio: 11999 },
+                            { marca: "Apple", modelo: "iPhone x", precio: 18000 },
+                            { marca: "Motorola", modelo: "Moto X", precio: 9000 }
+                        ]
+                    },
+                    {
+                        name: "Liverpool",
+                        stock: [
+                            { marca: "Huawei", modelo: "P30", precio: 13500 },
+                            { marca: "Apple", modelo: "iPhone x", precio: 20000 },
+                            { marca: "Motorola", modelo: "Moto X", precio: 10000 }
+                        ]
+                    }
+    ]
+    indiceMasBaratoTelefono = 0
+    indiceMasBaratoTienda = 0
+    precioMasBajo = stores[0].stock[0].precio
+
+    FOR contadorStores = 0; contadorStores<stores.length; contadorStores++
+        FOR contadorTelefonos = 0; conntadorTelefonos<stores[contadorStores].stock.length; contadorTelefonos++
+            SI stores[contadorStores].stock[contadorTelefonos].precio<=precioMasBajo ENTONCES
+                precioMasBajo = stores[contadorStores].stock[contadorTelefonos].precio
+                indiceMasBaratoTelefono = contadorTelefonos
+                indiceMasBaratoTienda = contadorStores            
+            FIN SI
+        FIN FOR
+    FIN FOR
+
+FIN
+        

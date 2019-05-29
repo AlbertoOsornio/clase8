@@ -1,0 +1,5 @@
+INICIO
+    persona {nombre "Rafa"}
+
+    ESCRIBE persona.nombre
+FIN

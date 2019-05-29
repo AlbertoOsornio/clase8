@@ -1,0 +1,11 @@
+INICIO
+    temperaturas [19,24,25,30,10]
+    numMasGrande
+
+    FOR contador=0; contador<temperaturas length; contador++
+        SI numMasGrande < temperaturas[contador+1]
+            numMasGrande = temperaturas[contador]
+        FIN SI
+    FIN FOR
+        ESCRIBE numMasGrande
+FIN

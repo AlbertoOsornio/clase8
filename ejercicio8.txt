@@ -1,0 +1,14 @@
+INICIO
+    alumno{
+        nombre: "Rafa Osornio"
+        calificaciones: [7,10,9,6]
+    }
+    numMasGrande
+
+    FOR contador=0; contador<alumno.calificaciones.length; contador++
+        SI numMasGrande<alumno.calificaciones[contador]
+            numMasGrande = alumno.calificaciones[contador]
+       FIN SI
+    FIN FOR
+        ESCRIBE numMasGrande
+FIN

@@ -1,0 +1,12 @@
+INICIO
+    persona {
+        nombreCompleto "Rafa"
+        partidas [true,false,true,true]
+        }
+
+    FOR contador=0; contador<persona.partidas.length; contador++
+        SI persona.partidas[contador] === TRUE ENTONCES
+            ESCRIBE "partidas ganadas: " + contador
+        FIN SI
+    FIN FOR
+FIN

@@ -1,0 +1,5 @@
+INICIO
+    persona {nombreCompleto "Rafa"}
+
+    ESCRIBE persona.nombreCompleto
+FIN
